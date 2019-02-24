@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2019-02-22 19:36:28.6731435 UTC
+2019-02-24 22:39:06.1357994 UTC
 
 interface leap-1.4.0.8-IqguBCNdkKKA0MmYKRJcIo:LeapYear 8043
-  interface hash: 28475f20ebbb21051543e7f86f521628
-  ABI hash: 4a6215f42ad272202a63e6fd2c3a5f0f
+  interface hash: 693eb8a0429768d64d3f2a3ae914015f
+  ABI hash: 4080166cf511013b518210d37727e463
   export-list hash: bbd940d90670beef29baca1d79bb5738
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 500057ae20a91f7502995808e1977811
@@ -49,21 +49,21 @@ d986381798ec521a400f4bf684e8e3f1
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
      Unfolding: ("leap-1.4.0.8-IqguBCNdkKKA0MmYKRJcIo"#) -}
-47d77363ad64bc073d88c1a5cfd58c08
+d228143eb5830fd471a711b27239f093
   isLeapYear :: GHC.Integer.Type.Integer -> GHC.Types.Bool
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: (\ (year :: GHC.Integer.Type.Integer) ->
                  case GHC.Integer.Type.eqInteger#
-                        (GHC.Integer.Type.remInteger year LeapYear.isLeapYear4)
+                        (GHC.Integer.Type.modInteger year LeapYear.isLeapYear4)
                         LeapYear.isLeapYear3 of wild {
                    DEFAULT -> GHC.Types.False
                    1#
-                   -> case GHC.Integer.Type.eqInteger#
-                             (GHC.Integer.Type.remInteger year LeapYear.isLeapYear2)
+                   -> case GHC.Integer.Type.neqInteger#
+                             (GHC.Integer.Type.modInteger year LeapYear.isLeapYear2)
                              LeapYear.isLeapYear3 of wild1 {
                         DEFAULT
                         -> case GHC.Integer.Type.eqInteger#
-                                  (GHC.Integer.Type.remInteger year LeapYear.isLeapYear1)
+                                  (GHC.Integer.Type.modInteger year LeapYear.isLeapYear1)
                                   LeapYear.isLeapYear3 of wild2 { DEFAULT ->
                            GHC.Prim.tagToEnum# @ GHC.Types.Bool wild2 }
                         1# -> GHC.Types.True } }) -}

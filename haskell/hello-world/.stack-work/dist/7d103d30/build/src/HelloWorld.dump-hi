@@ -1,0 +1,63 @@
+
+==================== FINAL INTERFACE ====================
+2019-02-22 17:04:05.1485881 UTC
+
+interface hello-world-1.1.0.5-EdYjXpCcjBZ4LdK8eRGEXb:HelloWorld 8043
+  interface hash: 5cbd5fb503289fd9db8c729b0f4eac52
+  ABI hash: 1622d13231e610dbaca50c6cec04eb30
+  export-list hash: 0afec05b6e29acf7198a57866fca5df3
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 500057ae20a91f7502995808e1977811
+  opt_hash: 14e536840aca4e889cad654e6f9b79c1
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  HelloWorld.hello
+module dependencies:
+package dependencies: base-4.11.1.0* ghc-prim-0.5.2.0
+                      integer-gmp-1.0.2.0
+orphans: base-4.11.1.0:GHC.Float base-4.11.1.0:GHC.Base
+family instance modules: base-4.11.1.0:Control.Applicative
+                         base-4.11.1.0:Data.Functor.Const
+                         base-4.11.1.0:Data.Functor.Identity base-4.11.1.0:Data.Monoid
+                         base-4.11.1.0:Data.Semigroup.Internal base-4.11.1.0:GHC.Generics
+                         base-4.11.1.0:GHC.IO.Exception
+import  -/  base-4.11.1.0:GHC.Base b7dd14d8fe8d606dde5678ea6b0575e9
+import  -/  base-4.11.1.0:Prelude aca391812f777207b15d62bb5b9feb63
+dfec701c789785f7a9b9186350ee0872
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   HelloWorld.$trModule3
+                   HelloWorld.$trModule1) -}
+a864c28fd3adfcdd7f580a15722cd13a
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS HelloWorld.$trModule2) -}
+06fcd1db8e0001b4cdf5d49d2e556e97
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("HelloWorld"#) -}
+84b0e81fc586d84f040fde91d30677f8
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS HelloWorld.$trModule4) -}
+29102b4f18fbd4ebf0da4b9ed2ac9543
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("hello-world-1.1.0.5-EdYjXpCcjBZ4LdK8eRGEXb"#) -}
+1d891337052b9bf6d0ccdd0f090c1ec1
+  hello :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# HelloWorld.hello1) -}
+0787fc12a94cc4b2bd96cd41c4a0aff4
+  hello1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Hello, World!"#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

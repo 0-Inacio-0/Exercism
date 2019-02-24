@@ -1,0 +1,8 @@
+Configuring quickcheck-io-0.2.0...
+Preprocessing library for quickcheck-io-0.2.0..
+Building library for quickcheck-io-0.2.0..
+[1 of 2] Compiling Paths_quickcheck_io ( .stack-work\dist\7d103d30\build\autogen\Paths_quickcheck_io.hs, .stack-work\dist\7d103d30\build\Paths_quickcheck_io.o )
+[2 of 2] Compiling Test.QuickCheck.IO ( src\Test\QuickCheck\IO.hs, .stack-work\dist\7d103d30\build\Test\QuickCheck\IO.o )
+ignoring (possibly broken) abi-depends field for packages
+Installing library in C:\sr\snapshots\0206bb5d\lib\x86_64-windows-ghc-8.4.3\quickcheck-io-0.2.0-EkaMZi89NOa4JiMdRU98Zc
+Registering library for quickcheck-io-0.2.0..

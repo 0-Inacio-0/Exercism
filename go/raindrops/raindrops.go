@@ -17,10 +17,10 @@ func Convert(number int) string {
 				str = "Pling"
 			}
 			if i == 5 {
-				str +="Plang"
+				str += "Plang"
 			}
 			if i == 7 {
-				str +="Plong"
+				str += "Plong"
 			}
 		}
 	}

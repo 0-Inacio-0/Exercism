@@ -8,34 +8,26 @@ type Kind int
 
 const (
 	// NaT == not a triangle
-	NaT = 0
+	NaT = iota
 	// Equ == equilateral
-	Equ = 1
+	Equ
 	// Iso == isosceles
-	Iso = 2
+	Iso
 	// Sca == scalene
-	Sca = 3
+	Sca
 )
 
 // KindFromSides returns the kind of triangle, not a triangle, equilateral, isosceles or scalene.
 func KindFromSides(a, b, c float64) Kind {
-	sides := []float64{a, b, c}
 	var k Kind
-	for _, l := range sides {
-		if l == math.NaN() || l == math.Inf(1) || l == math.Inf(-1) {
-			return NaT
-		}
-	}
-	if (a+b) >= c && (a+c) >= b && (b+c) >= a && (a != 0 && b != 0 && c != 0) {
-		if a == b && b == c {
-			k = Equ
-		} else if a == b || b == c || c == a {
-			k = Iso
-		} else {
-			k = Sca
-		}
+	if math.IsNaN(a+b+c) || math.IsInf(a+b+c, 1) || math.IsInf(a+b+c, -1) || a+b < c || a+c < b || b+c < a || a+b+c == 0 {
+		k = NaT
+	} else if a == b && b == c {
+		k = Equ
+	} else if a == b || b == c || c == a {
+		k = Iso
 	} else {
-		k = 0
+		k = Sca
 	}
 	return k
 }

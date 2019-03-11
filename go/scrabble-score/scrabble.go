@@ -9,8 +9,7 @@ var scoreValues = map[rune]int{'a': 1, 'b': 3, 'c': 3, 'd': 2, 'e': 1, 'f': 4, '
 // Score returns the calculated scrabble score of the input string(not case sensitive).
 func Score(str string) int {
 	score := 0
-	str = strings.ToLower(str)
-	for _, r := range str {
+	for _, r := range strings.ToLower(str) {
 		val, found := scoreValues[r]
 		if found {
 			score += val
